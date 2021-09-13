@@ -1,0 +1,24 @@
+﻿@model MvcKutuphane.Models.Entity.TBLYAZAR
+
+@{
+    ViewBag.Title = "YazarEkle";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<form class="form-group" method="post">
+    @* bu form sayfada butona tıklandığında işlem yapacak.*@
+    <div>
+        <br />
+        <label>YAZAR ADI</label>
+        @Html.TextBoxFor(y => y.AD, new { @class = "form-control" }) @* LINQ sorgulama işlemi yaptım.*@
+        <br />
+        <label>YAZAR SOYADI</label>
+        @Html.TextBoxFor(y => y.SOYAD, new { @class = "form-control" })
+        <br />
+        <label>YAZAR DETAYI</label>
+        @Html.TextAreaFor(y => y.DETAY, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-info" id="btn1">Ekle</button>
+    </div>
+</form>
+

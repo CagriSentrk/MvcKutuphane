@@ -1,0 +1,33 @@
+﻿@*@model MvcKutuphane.Models.Entity.TBLUYELER*@
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPanel.cshtml";
+}
+
+<h2>Admin Bilgileri</h2>
+
+<table class="table table-hover">
+
+    <tr>
+        <td>
+            Ad:@Session["Ad"].ToString()
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Mail:@Session["Maıl"].ToString()
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Şifre:@Session["Sifre"].ToString()
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Şifre:@Session["Telefon"].ToString()
+        </td>
+    </tr>
+    <tr>
+    </tr>
+</table>

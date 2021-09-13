@@ -1,0 +1,17 @@
+﻿@model MvcKutuphane.Models.Entity.TBLKATEGORI
+@{
+    ViewBag.Title = "KategoriEkle";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<form class="form-group" method="post"> @* bu form sayfada butona tıklandığında işlem yapacak.*@
+<div>
+    <br />
+    <label>KATEGORİ ADI</label>
+    <input type="text" class="form-control" name="AD" />
+</div>
+   <div style="margin-top:15px">
+       <button class="btn btn-info" id="btn1">Kategori ekle</button>
+   </div>
+</form>
+

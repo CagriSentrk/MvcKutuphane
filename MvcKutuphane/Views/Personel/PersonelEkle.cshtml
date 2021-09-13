@@ -1,0 +1,17 @@
+﻿@model MvcKutuphane.Models.Entity.TBLPERSONEL
+@{
+    ViewBag.Title = "PersonelEkle";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<<form class="form-group" method="post"> @* bu form sayfada butona tıklandığında işlem yapacak.*@
+<div>
+    <br />
+    <label>PERSONEL ADI</label>
+    <input type="text" class="form-control" name="PERSONEL" />
+</div>
+   <div style="margin-top:15px">
+       <button class="btn btn-info" id="btn1">Personel ekle</button>
+   </div>
+</form>
+
